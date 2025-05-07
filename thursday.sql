@@ -8,7 +8,7 @@ SELECT DISTINCT Location
 SELECT * FROM Site WHERE Area < 200;
 -- Can be arbitrary expressions
 SELECT * FROM Site WHERE Area < 200 AND Latitude > 60;
--- Not equa, classic operator is <>, but nowadays most databases support !=
+-- Not equal, classic operator is <>, but nowadays most databases support !=
 SELECT * FROM Site WHERE Location <> 'Alaska, USA';
 -- LIKE for string matching, uses % as wildcard character (not *)
 SELECT * FROM Site WHERE Location LIKE '%Canada'; -- Any site that ends in Canada
